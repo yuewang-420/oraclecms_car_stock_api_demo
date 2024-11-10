@@ -162,3 +162,10 @@ The following are the dealer accounts available for testing the API:
   `{ "DealerId" : "1004", "Password": "password000" }`
 
 These credentials can be used to authenticate with the /api/auth/login endpoint to receive a JWT token.
+
+## Input Validation (DataAnnotations)
+Each model in the project has relevant `DataAnnotations` attributes to ensure that data conforms to required formats, ranges, and constraints. Below are some examples of how DataAnnotations have been applied:
+
+- Required Fields: Ensures that necessary data fields are present in the request.
+- String Length: Limits the maximum length of string properties to prevent excessively long input.
+- Range Checks: Validates numerical properties to ensure they fall within a specified range.
